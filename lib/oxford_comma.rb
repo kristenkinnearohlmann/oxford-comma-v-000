@@ -1,10 +1,10 @@
 def oxford_comma(array)
-  case array.length
-    when 1
+  case 
+  when array.length == 1
       array.join
-    when 2
+    when array.length == 2
       array.join(" and ")
-    when > 2
+    when array.length > 2
       array.join(", ")
   end
 end
